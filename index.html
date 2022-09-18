@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>User Registration Form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <header class="header"><h3>Registration Form</h3></header>
+      <form action="#" id="form" method="get" name="myform">
+        <div class="input-fields">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name"  required/>
+        </div>
+        <div class="input-fields">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="input-fields">
+          <label for="number">Mobile number</label>
+          <input type="tel" name="number" id="number" required />
+        </div>
+        <div class="check-box">
+            <label  for="Known Languages">Known Languages</label> <br>
+           <input style="margin-top:20px ;" type="checkbox" name="language" id="Tamil" value="Tamil" >  <span>Tamil</span> &nbsp;
+           <input type="checkbox" name="language" id="English" value="English" >  <span>English</span> &nbsp;
+           <input type="checkbox" name="language" id="Hindi" value="Hindi" >  <span>Hindi</span> &nbsp;
+        </div>
+        <div class="radio-btn">
+            <label  for="Gender">Gender</label> <br>
+            <input  style="margin-top:20px ;" type="radio" id="Male" name="Gender" value="Male" > <span>Male</span> &nbsp;
+            <input type="radio" id="Female" name="Gender" value="Female"> <span>Female</span> &nbsp;
+            <input type="radio" id="Others" name="Gender" value="Others"> <span>Others</span> &nbsp;
+        </div>
+        <div class="select">
+             <label for="countries">Country</label>
+             <select name="country" id="countries" required>   
+             </select>
+        </div>
+        <button class="next-btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>MobileNo.</th>
+            <th>Known Languages</th>
+            <th>Gender</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
